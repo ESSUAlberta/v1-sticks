@@ -2,15 +2,26 @@
   "name": "@essua/v1-sticks",
   "version": "0.0.1",
   "description": "Sticks v1 is a React Component Library for use on the ESS Websites",
-  "main": "src",
+  "main": "lib",
   "author": "Mohammad Al-Ahdal",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-transform-react-display-name": "^7.2.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6"
   },
   "scripts": {
-    "start": "yarn --cwd ./gallery start"
+    "start": "yarn --cwd ./gallery start",
+    "prepublish": "node_modules/@babel/cli/bin/babel.js src --out-dir lib",
+    "build": "node_modules/@babel/cli/bin/babel.js src --out-dir lib",
+    "buildmon": "nodemon node_modules/@babel/cli/bin/babel.js src --out-dir lib"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }

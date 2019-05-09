@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-class Hyperlink extends Component {
+class HyperLink extends Component {
   static propTypes = {
     
   }
@@ -15,4 +15,4 @@ class Hyperlink extends Component {
   }
 }
 
-export default Hyperlink
+export default HyperLink
