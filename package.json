@@ -1,16 +1,15 @@
 {
   "name": "@essua/v1-sticks",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sticks v1 is a React Component Library for use on the ESS Websites",
   "main": "src",
   "author": "Mohammad Al-Ahdal",
   "license": "MIT",
-  "private": false,
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6"
   },
   "scripts": {
-    "start": "yarn --cwd yarn --cwd ./gallery start"
+    "start": "yarn --cwd ./gallery start"
   }
 }
