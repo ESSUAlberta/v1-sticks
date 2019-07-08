@@ -12,16 +12,27 @@
     "@babel/plugin-syntax-jsx": "^7.2.0",
     "@babel/plugin-transform-react-display-name": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "yarn --cwd ./gallery start",
-    "prepublish": "node_modules/@babel/cli/bin/babel.js src --out-dir lib",
-    "build": "node_modules/@babel/cli/bin/babel.js src --out-dir lib",
-    "buildmon": "nodemon node_modules/@babel/cli/bin/babel.js src --out-dir lib"
+    "prepublish": "webpack -p",
+    "build": "webpack -p",
+    "buildmon": "webpack -p --watch"
   },
   "devDependencies": {
-    "nodemon": "^1.19.0"
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.19.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
   }
 }

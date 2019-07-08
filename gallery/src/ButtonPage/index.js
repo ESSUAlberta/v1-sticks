@@ -4,8 +4,8 @@ import { Button } from '@essua/v1-sticks'
 class ButtonPage extends Component {
   render() {
     return (
-      <div>
-        <Button></Button>
+      <div style={{width: "100vw", height: "100vh", backgroundColor: "black"}}>
+        <Button onClick={() => {alert("Button works!")}}>This is a Button exampleeeeeeeeeeeeedsahjdgsuaygduysagdyfsatdfsatgy</Button>
       </div>
     )
   }
