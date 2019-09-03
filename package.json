@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "babel-loader": "8.0.5",
-    "nodemon": "1.19.0",
+    "nodemon": "1.19.2",
     "webpack": "4.31.0",
     "webpack-cli": "3.3.2",
     "webpack-dev-server": "3.3.1"
